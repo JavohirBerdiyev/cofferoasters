@@ -1,16 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,800;0,9..144,900;1,9..144,500;1,9..144,600;1,9..144,700;1,9..144,800&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="css/flexboxgrid.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
 
-  <script src="js/main.js"></script>
+<body>
+  <section id="hero">
+    <header class="site-header">
+      <div class="container">
+        <div class="row between-xs middle-xs">
+          <div class="logo">
+            <img src="imgs/logo.svg" alt="logo">
+          </div>
+          <nav class="hero-nav">
+            <ul class="header-list">
+              <li class="header-item"><a class="header-link" href="#">HOME</a></li>
+              <li class="header-item"><a class="header-link" href="#">ABOUT US</a></li>
+              <li class="header-item"><a class="header-link" href="#">Create your plan</a></li>
+            </ul>
+          </nav>
+          <div class="menu">
+            <i class='bx bx-menu'></i>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="hero-content">
+        <div class="backdrop"></div>
+        <div class="content-desc">
+          <h1 class="content-title">Great coffee made simple</h1>
+          <p class="content-text">Start your mornings with the world’s best coffees. Try our expertly curated artisan
+            coffees from our best
+            roasters delivered directly to your door, at your schedule.</p>
+          <a href="#" class="content-btn">Create your plan</a>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
+
 </html>

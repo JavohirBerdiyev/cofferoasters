@@ -20,8 +20,9 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
+  font-family: 'Barlow', sans-serif;
   background-color: #fff;
+  color: #83888F;
 }
 
 img {
@@ -42,14 +43,129 @@ img {
 
 /* CONTAINER */
 .container {
-  padding-left: 50px;
-  padding-right: 50px;
+  width: 1280px;
   margin-left: auto;
   margin-right: auto;
 }
+.site-header {
+  padding: 35px 0;
+}
+.logo {
+  width: 236px;
+}
+.header-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.header-item:not(:last-child) {
+  margin-right: 32px;
+}
+.header-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #83888F;
+}
 
-@media only screen and (min-width: 1200px) {
+.hero-content {
+  background-image: url("../imgs/Bitmap.jpg");
+  background-size: cover;
+  height: 600px;
+  padding: 117px 84px;
+  border-radius: 15px;
+}
+.content-title {
+  font-family: 'Fraunces', serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  color: #FEFCF7;
+  width: 493px;
+  margin-bottom: 32px;
+}
+.content-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FEFCF7;
+  opacity: 0.8;
+  width: 445px;
+  margin-bottom: 56px;
+}
+.content-btn {
+  background: #0E8784;
+  border-radius: 6px;
+  text-decoration: none;
+  padding: 15px 31px;
+  font-family: 'Fraunces';
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #FEFCF7;
+}
+.menu {
+  display: none;
+}
+.bx-menu {
+  font-size: 36px;
+  color: black;
+}
+@media only screen and (max-width: 1200px) {
   .container {
-    width: 1140px;
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .container {
+    width: 90%;
+  }
+
+  .content-title  {
+    width: 329px;
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .content-text  {
+    width: 329px;
+    font-size: 15px;
+    line-height: 15px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .el {
+    position: relative;
+  }
+  .hero-content {
+    background-position-x: 750px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .content-desc {
+    position: relative;
+    text-align: center;
+    z-index: 20;
+  }
+  .backdrop {
+    position: absolute;
+    top: 40.5%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.617);
+    border-radius: 15px;
+  }
+  .hero-nav {
+    display: none;
+  }
+  .menu {
+    display: block;
   }
 }
